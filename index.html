@@ -164,6 +164,55 @@ nav a[aria-current="page"]{background:linear-gradient(110deg,#86571b,#b98530 45%
 .dt th,.dt td{padding:7px 8px;font-size:13.5px}.dt th{border-bottom:2px solid var(--ink)}.dt tr:last-child td{font-weight:600}
 @media(max-width:700px){.pg{padding:20px 16px;min-height:0}.dk4,.dk3{grid-template-columns:repeat(2,1fr)}}
 @media print{@page{size:A4;margin:12mm}aside,header,.noprint,#toast,#np,#md{display:none!important}#app{display:block}main{padding:0;max-width:none}.pg{box-shadow:none;border:0;padding:0;min-height:0;margin:0;border-radius:0;break-after:page}.pg:last-child{break-after:auto}body{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* ===== revisi: mode 3D, pemilih pabrik, WhatsApp, badge ESG ===== */
+.mm button{padding:7px 14px;font-size:14px}
+.mcap{position:absolute;right:14px;bottom:10px;max-width:min(380px,calc(100% - 28px));background:rgba(255,255,255,.93);border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:12.5px;color:var(--ink);box-shadow:0 4px 14px rgba(60,40,20,.08);pointer-events:none}
+@media(max-width:700px){.mcap{bottom:34px}}
+.xbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn.wa{background:#25a244;border-color:#25a244;display:inline-flex;gap:8px;align-items:center}
+.btn.pk{display:inline-flex;gap:8px;align-items:center}
+.xb{border:0;background:none;font-size:18px;color:var(--mute);line-height:1;padding:4px 8px;border-radius:8px}
+.mdl.wide{max-width:620px}
+.pl{display:flex;flex-direction:column;gap:10px;margin:12px 0}
+.po{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:#fff;border:2px solid var(--line);border-radius:14px;padding:8px 12px 8px 8px;transition:.15s}
+.po:hover{border-color:#e6c9a8}.po.on{border-color:var(--act);box-shadow:0 0 0 3px rgba(217,115,43,.15)}
+.po b{display:block;font-family:Poppins,sans-serif;color:var(--ink)}
+.po>span:nth-child(2){flex:1;min-width:0}
+.pi{width:84px;flex:none;border-radius:9px;overflow:hidden;display:block}
+.pi.all{height:46px;background:linear-gradient(135deg,#f3a04a,#e0642f);color:#fff;display:grid;place-items:center;font:700 24px Poppins,sans-serif}
+.ck{margin-left:auto;width:24px;height:24px;border-radius:50%;background:var(--act);color:#fff;display:none;place-items:center;font-size:13px;font-style:normal;flex:none}.po.on .ck{display:grid}
+.wl{display:flex;flex-direction:column;gap:8px;margin:12px 0;max-height:52vh;overflow:auto;padding-right:2px}
+.wr{display:flex;gap:8px;align-items:center}.wn{width:22px;text-align:center;color:var(--mute);font-size:13px;flex:none}
+.wr .in{margin-top:0;padding:9px 12px}
+.btn.sm{padding:8px 12px;font-size:13px;white-space:nowrap}
+.wcnt{margin-right:auto;align-self:center;font-size:13px;color:var(--mute)}
+#ph{position:fixed;inset:0;background:rgba(20,14,8,.62);display:none;place-items:center;z-index:60;padding:16px;overflow:auto}#ph.on{display:grid}
+.phw{display:flex;flex-direction:column;align-items:center;gap:12px}
+.phc{color:#f3e8d8;text-align:center;font-size:14px;max-width:320px}.phc b{color:#fff}
+.phone{position:relative;width:290px;height:560px;border-radius:40px;background:#15171c;padding:11px;box-shadow:0 24px 60px rgba(0,0,0,.5),inset 0 0 0 2px #2b2f38}
+.phone.vib{animation:vib .5s 2}
+@keyframes vib{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px) rotate(-1deg)}40%{transform:translateX(5px) rotate(1deg)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+.ntch{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:96px;height:22px;background:#15171c;border-radius:0 0 14px 14px;z-index:3}
+.scr{height:100%;border-radius:30px;overflow:hidden;display:flex;flex-direction:column;background:#e5ddd5}
+.sb{background:#075e54;color:#fff;font-size:11px;display:flex;justify-content:space-between;padding:9px 20px 3px;font-weight:600}
+.wh{background:#075e54;color:#fff;display:flex;gap:9px;align-items:center;padding:6px 12px 10px}
+.wh .bk{font-size:24px;line-height:1}
+.wav{width:34px;height:34px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;flex:none}.wav img{width:82%}
+.wh b{display:flex;align-items:center;gap:4px;font:600 14px Inter,system-ui,sans-serif;color:#fff}.wh small{display:block;font-size:11px;opacity:.85}
+.wcb{flex:1;padding:10px;overflow:hidden;display:flex;flex-direction:column;gap:7px;background:#e5ddd5}
+.dc{align-self:center;background:#e1f3fb;color:#54656f;font-size:10.5px;padding:3px 9px;border-radius:7px;box-shadow:0 1px 1px rgba(0,0,0,.1)}
+.bb{align-self:flex-start;max-width:90%;background:#fff;border-radius:0 9px 9px 9px;padding:7px 9px 4px;font-size:12.5px;line-height:1.42;color:#111b21;box-shadow:0 1px 1px rgba(0,0,0,.13);animation:bin .35s both}
+.bb.warn{border-left:4px solid #e0a82e}
+.bb .tm{display:block;text-align:right;font-size:10px;color:#667781;margin-top:2px}
+.ty{display:inline-flex;gap:4px;padding:6px 4px}.ty i{width:6px;height:6px;border-radius:50%;background:#8696a0;animation:td 1s infinite}.ty i:nth-child(2){animation-delay:.15s}.ty i:nth-child(3){animation-delay:.3s}
+@keyframes td{50%{transform:translateY(-4px);opacity:.5}}@keyframes bin{from{opacity:0;transform:translateY(8px) scale(.96)}}
+.wf{background:#f0f2f5;display:flex;gap:8px;align-items:center;padding:8px 10px;font-size:12px;color:#667781}.wf span{flex:1;background:#fff;border-radius:18px;padding:7px 12px}.wf i{width:30px;height:30px;border-radius:50%;background:#00a884;color:#fff;display:grid;place-items:center;font-style:normal;font-size:13px}
+@media(prefers-reduced-motion:reduce){.phone.vib,.bb,.ty i{animation:none}}
+.dtw{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:6px}.dtw .dt1{margin:0}
+.vbg{display:flex;align-items:center;gap:10px;border:1.5px solid #2f8f5b;background:linear-gradient(135deg,#f0faf2,#e1f4e7);border-radius:12px;padding:7px 14px 7px 10px;color:#1f6b42}
+.vbg b{display:block;font:700 13px Poppins,sans-serif;letter-spacing:.12em;color:#1f6b42}.vbg span{display:block;font-size:11px;color:#3d7a58;line-height:1.35}
+.vbs{display:inline-flex;align-items:center;margin-left:8px;padding:1px 8px;border-radius:99px;background:#e1f4e7;color:#1f6b42;font-weight:600;font-size:11px;border:1px solid #b9dfc8}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
@@ -182,7 +231,7 @@ nav a[aria-current="page"]{background:linear-gradient(110deg,#86571b,#b98530 45%
   <main id="view"></main>
 </div>
 </div>
-<div id="md"></div><div id="np"></div><div id="toast" role="status"></div>
+<div id="md"></div><div id="ph" role="dialog" aria-modal="true" aria-label="Simulasi WhatsApp"></div><div id="np"></div><div id="toast" role="status"></div>
 
 <script>
 var $=function(i){return document.getElementById(i)};
@@ -243,7 +292,7 @@ var F={t:function(){return N(L.t)},t2:function(){return N(L.t-83)+'°C'},p:funct
 function lcL(o){var id='c'+REG.length;REG.push({id:id,o:o,k:'l'});return '<div id="'+id+'">'+lc(o)+'</div>'}
 function bcL(o){var id='c'+REG.length;o.b=o.s.map(function(s){return s.d.slice()});REG.push({id:id,o:o,k:'b'});return '<div id="'+id+'">'+bc(o)+'</div>'}
 function paint(){document.querySelectorAll('[data-k]').forEach(function(e){var k=e.dataset.k;if(!F[k])return;if(k==='bar'||k==='hb'||k==='rb')e.style.width=F[k]();else e.textContent=F[k]()})}
-function tick(){jit();var r=function(){return Math.random()-.5};L.e=Math.max(L.e0*.9,Math.min(L.e0*1.06,L.e+r()*14));L.ef=Math.max(92,Math.min(96,L.ef+r()*.2));L.sv=Math.min(13,L.sv+.002+Math.random()*.004);L.co+=.003;if(!PL[sel].paid)L.u+=1+Math.random()*2;paint();
+function tick(){jit();var r=function(){return Math.random()-.5};L.e=Math.max(L.e0*.9,Math.min(L.e0*1.06,L.e+r()*14));L.ef=Math.max(92,Math.min(96,L.ef+r()*.2));L.sv=Math.min(13,L.sv+.002+Math.random()*.004);L.co+=.003;if(!CP().paid)L.u+=1+Math.random()*2;paint();
  REG.forEach(function(g){var e=$(g.id);if(!e)return;var o=g.o;
   if(g.k==='l')o.s.forEach(function(s){if(s.dots)return;var d=s.d,m=d.reduce(function(a,b){return a+b},0)/d.length,l=d[d.length-1],v=l+r()*o.max*.08+(m-l)*.15;d.push(Math.max(o.max*.04,Math.min(o.max*.96,v)));d.shift()});
   else o.s.forEach(function(s,j){s.d=o.b[j].map(function(v){return Math.min(o.max,v*(1+r()*.08))})});
@@ -257,7 +306,7 @@ function init3D(el){if(!el)return;var cv=el.querySelector('.cv'),T=window.THREE,
  var M=function(c,o){return new T.MeshStandardMaterial(Object.assign({color:c,roughness:.55,metalness:.2},o||{}))},
  add=function(g,m,x,y,z,p){var o=new T.Mesh(g,m);o.position.set(x,y,z);(p||sc).add(o);return o},
  Bx=function(w,h,d){return new T.BoxGeometry(w,h,d)},Cy=function(a,b,h,n){return new T.CylinderGeometry(a,b,h,n||16)},
- gray=M(0xc5c8cc),rot=[],bricks=[],P=[];
+ gray=M(0xc5c8cc),rot=[],bricks=[],P=[],rods=[];
  add(Bx(9,.25,5),gray,-7,-.12,0);
  [-9.5,-7,-4.5].forEach(function(x){add(Cy(.08,.18,6,12),M(0xbfc4ca),x,3,-1);var g=new T.Group();g.position.set(x,6.1,-.8);sc.add(g);add(new T.SphereGeometry(.2,12,12),M(0x2b3442),0,0,0,g);
   var bl=new T.Group();g.add(bl);rot.push(bl);for(var i=0;i<3;i++){var a=new T.Group();a.rotation.z=i*2.094;bl.add(a);add(Bx(.14,2.6,.05),M(0xd5d9de),0,1.4,.1,a)}});
@@ -265,14 +314,58 @@ function init3D(el){if(!el)return;var cv=el.querySelector('.cv'),T=window.THREE,
  function path(p){var c=new T.CurvePath();for(var i=1;i<p.length;i++)c.add(new T.LineCurve3(V(p[i-1]),V(p[i])));return c}
  function pipe(c,col,r){add(new T.TubeGeometry(c,160,r||.07,8,false),M(col,{metalness:.4}),0,0,0)}
  function flow(c,n,col,sp){for(var i=0;i<n;i++){var m=add(new T.SphereGeometry(.11,8,8),new T.MeshBasicMaterial({color:col}),0,0,0);P.push({m:m,c:c,t:i/n,sp:sp})}}
- var pw=path([[-3.2,.5,1.4],[-1.5,.5,1.4],[-1.5,1.6,.9],[.7,1.6,.9]]);pipe(pw,0xe8b13a,.06);flow(pw,8,0xffe08a,.09);
+ var pw=path([[-3.2,.5,1.4],[-1.5,.5,1.4],[-1.5,1.6,.9],[.7,1.6,.9]]);pipe(pw,0xe8b13a,.06);flow(pw,8,0xffe08a,.09);P.forEach(function(q){q.chg=1});
  [['#e8b13a',2],['#e07a35',1],['#c4283c',0]].forEach(function(r){for(var c=0;c<5;c++)for(var z=-1;z<=1;z+=2){var col=parseInt(r[0].slice(1),16),b=add(Bx(1.05,.85,1.55),M(col,{emissive:col,emissiveIntensity:.2}),1.4+c*1.15,.5+r[1]*.95,z*.85);bricks.push(b)}});
- for(var c=0;c<6;c++)[-1.8,1.8].forEach(function(z){add(Cy(.05,.05,3.4),M(0x1c2636),1.4+(c-.5)*1.15,1.6,z)});
+ for(var c=0;c<6;c++)[-1.8,1.8].forEach(function(z){rods.push(add(Cy(.05,.05,3.4),M(0x1c2636),1.4+(c-.5)*1.15,1.6,z))});
  var gl=function(w,h,d,x,y,z){add(Bx(w,h,d),new T.MeshStandardMaterial({color:0xaab0b8,transparent:true,opacity:.42,depthWrite:false}),x,y,z)};
  gl(.15,4.2,4.2,-.2,2,0);gl(.15,4.2,4.2,7.1,2,0);gl(.15,3.8,3.6,8.4,1.9,0);gl(.15,3.8,3.2,9.8,1.9,0);
  var hot=path([[6.2,3.2,0],[9.3,3.2,0],[9.3,2.3,0],[6.9,2.3,0],[6.9,1.4,0],[9.3,1.4,0],[9.3,.55,0],[7.4,.55,0]]),cold=path([[7.4,.55,0],[6.4,.55,0],[6.4,.2,0],[7.6,.2,1.2],[7.6,.2,0],[6.2,.2,0]]);
  pipe(hot,0x8f3a1c,.09);pipe(cold,0xb0561f,.08);flow(hot,22,0xffa24a,.05);flow(cold,10,0xd9a27a,.05);
  var wh=add(Cy(.5,.5,.3,24),M(0x161a22),8.4,.5,1.4);wh.rotation.x=Math.PI/2;var fan=add(Cy(.4,.4,.7,10),M(0x3a4556),10.2,.5,1.4);fan.rotation.z=Math.PI/2;
+
+ /* ===== efek mode: charge / storing / discharge ===== */
+ var MX={ch:0,dv:0,hv:.6,arcT:0},pLamp=new T.PointLight(0xff7a30,0,16);pLamp.position.set(3.7,1.8,0);sc.add(pLamp);
+ var SEG=Cy(1,1,1,5),AMC=new T.MeshBasicMaterial({color:0xfff2a8,transparent:true,opacity:.95,blending:T.AdditiveBlending,depthWrite:false}),
+  AMG=new T.MeshBasicMaterial({color:0xffc83a,transparent:true,opacity:.45,blending:T.AdditiveBlending,depthWrite:false}),
+  UPV=new T.Vector3(0,1,0),arcs=[],i2;
+ function mkArc(){var g=new T.Group(),core=[],glow=[],i,m;
+  for(i=0;i<7;i++){m=new T.Mesh(SEG,AMC);g.add(m);core.push(m);m=new T.Mesh(SEG,AMG);g.add(m);glow.push(m)}
+  var sp=new T.Mesh(new T.SphereGeometry(.13,8,8),AMC);g.add(sp);g.visible=false;sc.add(g);return {g:g,core:core,glow:glow,sp:sp}}
+ function setArc(a){var rc=Math.floor(Math.random()*6),sg=Math.random()<.5?-1:1,col=Math.max(0,Math.min(4,Math.round(rc-.5+(Math.random()-.5)*3))),row=Math.floor(Math.random()*3),
+   A=new T.Vector3(1.4+(rc-.5)*1.15,.2+Math.random()*2.9,sg*1.8),B=new T.Vector3(1.4+col*1.15+(Math.random()-.5)*.6,.5+row*.95+(Math.random()-.5)*.5,sg*1.63),pts=[],i,t,p0,p1,dvv=new T.Vector3();
+   for(i=0;i<=7;i++){t=i/7;var q=A.clone().lerp(B,t);if(i>0&&i<7){q.x+=(Math.random()-.5)*.45;q.y+=(Math.random()-.5)*.45;q.z+=(Math.random()-.5)*.12}pts.push(q)}
+   for(i=0;i<7;i++){p0=pts[i];p1=pts[i+1];dvv.subVectors(p1,p0);var len=dvv.length()||.01;dvv.normalize();
+    [a.core[i],a.glow[i]].forEach(function(m,j){m.position.copy(p0).add(p1).multiplyScalar(.5);m.quaternion.setFromUnitVectors(UPV,dvv);m.scale.set(j?.075:.03,len,j?.075:.03)})}
+   a.sp.position.copy(B)}
+ for(i2=0;i2<7;i2++)arcs.push(mkArc());
+ /* kipas / blower kecil (hanya tampil saat discharge) */
+ var fg=new T.Group();fg.position.set(-1.15,1.45,0);sc.add(fg);
+ var fring=add(new T.TorusGeometry(.72,.06,8,28),M(0x3a4556,{metalness:.6}),0,0,0,fg);fring.rotation.y=Math.PI/2;
+ var fhub=add(Cy(.15,.15,.26,14),M(0x222a36),0,0,0,fg);fhub.rotation.z=Math.PI/2;
+ var fmot=add(Cy(.22,.22,.55,14),M(0x4a5568,{metalness:.5}),-.4,0,0,fg);fmot.rotation.z=Math.PI/2;
+ add(Bx(.14,1.5,.14),M(0x3a4556),-.45,-.75,0,fg);add(Bx(.6,.08,.9),M(0x3a4556),-.45,-1.42,0,fg);
+ var fb=new T.Group();fg.add(fb);
+ for(i2=0;i2<5;i2++){var ba=new T.Group();ba.rotation.x=i2*Math.PI*2/5;fb.add(ba);var bd=add(Bx(.03,.52,.24),M(0x7fb6d9,{metalness:.1,roughness:.4}),0,.4,0,ba);bd.rotation.y=.45}
+ fg.visible=false;
+ var airs=[],steams=[];
+ for(i2=0;i2<40;i2++){var am=new T.Mesh(new T.SphereGeometry(.055,6,6),new T.MeshBasicMaterial({color:0xcfeeff,transparent:true,opacity:0,depthWrite:false}));am.scale.set(3,1,1);sc.add(am);
+  airs.push({m:am,t:Math.random(),s:.55+Math.random()*.5,y:1.45+(Math.random()-.5)*1.15,z:(Math.random()-.5)*1.15})}
+ for(i2=0;i2<34;i2++){var sm=new T.Mesh(new T.SphereGeometry(1,10,10),new T.MeshBasicMaterial({color:0xfff1e2,transparent:true,opacity:0,depthWrite:false}));sc.add(sm);
+  var x0=1.4+Math.random()*4.6,z0=(Math.random()<.5?-1:1)*(.15+Math.random()*1.2);
+  steams.push({m:sm,t:Math.random(),s:.1+Math.random()*.07,a:[x0,2.95,z0],b:[x0+(7.2-x0)*.35,4.5+Math.random()*.5,z0*.25],c:[8.9,3.25,(Math.random()-.5)*.3]})}
+ function modeFx(dt,now){var ch=MODE==='charge',st=MODE==='store',dc=MODE==='discharge',i;
+  MX.ch+=((ch?1:0)-MX.ch)*Math.min(1,dt*3);MX.dv+=((dc?1:0)-MX.dv)*Math.min(1,dt*2.5);
+  MX.hv+=((ch?1:st?.9:.5)-MX.hv)*(1-Math.exp(-dt*(ch?.7:st?.4:.22)));
+  pLamp.intensity=MX.hv*1.3+(ch?Math.random()*.7:0);
+  rods.forEach(function(r){r.material.emissive.setHex(0xffc83a);r.material.emissiveIntensity=MX.ch*(.75+.25*Math.sin(now/55))});
+  MX.arcT-=dt;if(MX.arcT<=0){MX.arcT=.06+Math.random()*.07;arcs.forEach(function(a){if(ch&&Math.random()<.72){setArc(a);a.g.visible=true}else a.g.visible=false})}
+  if(!ch)arcs.forEach(function(a){a.g.visible=false});
+  fg.visible=MX.dv>.03;fg.scale.setScalar(.35+.65*MX.dv);fb.rotation.x+=dt*20*MX.dv;
+  airs.forEach(function(a){a.t=(a.t+dt*a.s)%1;a.m.visible=MX.dv>.03;a.m.position.set(-.7+a.t*1.55,a.y,a.z);a.m.material.opacity=MX.dv*Math.sin(Math.PI*a.t)*.9});
+  steams.forEach(function(s){s.t=(s.t+dt*s.s)%1;var t=s.t,u=1-t;s.m.visible=MX.dv>.03;
+   s.m.position.set(u*u*s.a[0]+2*u*t*s.b[0]+t*t*s.c[0],u*u*s.a[1]+2*u*t*s.b[1]+t*t*s.c[1],u*u*s.a[2]+2*u*t*s.b[2]+t*t*s.c[2]);
+   s.m.scale.setScalar(.14+.36*t);s.m.material.opacity=MX.dv*(t<.12?t/.12:Math.pow(u,.8))*.5})}
+ /* ===== akhir efek mode ===== */
  var th=.75,ph=1.18,rad=26,tg=new T.Vector3(1.6,2.4,0),pt={};
  var cm=function(){cam.position.set(tg.x+rad*Math.sin(ph)*Math.sin(th),tg.y+rad*Math.cos(ph),tg.z+rad*Math.sin(ph)*Math.cos(th));cam.lookAt(tg)},cl=function(v,a,b){return Math.max(a,Math.min(b,v))};
  var dm=rd.domElement,dist=function(){var k=Object.keys(pt);return Math.hypot(pt[k[0]][0]-pt[k[1]][0],pt[k[0]][1]-pt[k[1]][1])};
@@ -285,9 +378,9 @@ function init3D(el){if(!el)return;var cv=el.querySelector('.cv'),T=window.THREE,
  (function loop(now){if(!el.isConnected){rd.dispose();return}requestAnimationFrame(loop);var dt=Math.min(.05,(now-last)/1000);last=now;
   var heat=cl((L.t-550)/220,0,1),fl=L.f/1300;
   rot.forEach(function(g){g.rotation.z-=dt*(1+L.w/500)});
-  bricks.forEach(function(b,i){b.material.emissiveIntensity=.12+.4*heat+.1*Math.sin(now/500+i)});
-  P.forEach(function(p){p.t=(p.t+dt*p.sp*fl)%1;p.m.position.copy(p.c.getPoint(p.t))});
-  fan.rotation.x+=dt*8*fl;wh.rotation.y+=dt*5*fl;cm();rd.render(sc,cam)})(last);
+  bricks.forEach(function(b,i){b.material.emissiveIntensity=.12+.4*heat+.1*Math.sin(now/500+i)+.55*(MX.hv-.5)});
+  P.forEach(function(p){p.t=(p.t+dt*p.sp*fl)%1;p.m.position.copy(p.c.getPoint(p.t));if(p.chg)p.m.visible=MX.ch>.04});
+  fan.rotation.x+=dt*8*fl;wh.rotation.y+=dt*5*fl;modeFx(dt,now);cm();rd.render(sc,cam)})(last);
  window.addEventListener('resize',function(){if(!el.isConnected)return;var w=cv.clientWidth,h=cv.clientHeight;rd.setSize(w,h);cam.aspect=w/h;cam.updateProjectionMatrix()})}
 
 
@@ -298,6 +391,8 @@ function nt(a){return '<div class="nt"><span class="p" style="color:var(--act);f
 function stat(c,k,v,e){return '<div class="st s-'+c+'"><span class="k">'+k+'</span><b>'+v+'</b><em>'+e+'</em></div>'}
 function gc(c,k,v,u,t,tag){return '<div class="g g'+c+'"><div class="tp"><span class="t">'+(t||'')+'</span>'+(tag?'<span class="tag">'+tag+'</span>':'')+'</div><div class="k">'+k+'</div><div class="v">'+v+(u?' <small>'+u+'</small>':'')+'</div></div>'}
 
+var MODE='charge',MCAP={charge:'⚡ Charging: listrik memanaskan bata refraktori',store:'▣ Storing: listrik terputus, bata menyimpan panas',discharge:'♨ Discharging: blower meniupkan udara ke bata, uap panas dialirkan ke barang'};
+function setMode(m){MODE=m;document.querySelectorAll('#mdsw button').forEach(function(b){var on=b.dataset.md===m;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});var e=$('mcap');if(e)e.textContent=MCAP[m]}
 var PAGES={
 dasbor:function(){return '<div class="banner"><h1>Selamat datang kembali, PT Industri ABC</h1><p>'+new Date(2026,10,5).toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'})+'</p><span><span class="dot"></span>System Online - Last update: <span data-k="ck">'+clock()+'</span></span></div>'+
  '<div class="grid c4 mb">'+
@@ -305,7 +400,7 @@ dasbor:function(){return '<div class="banner"><h1>Selamat datang kembali, PT Ind
  '<div class="card"><div class="row"><span class="ico">⚡</span><span class="up">↘</span></div><div class="k">Efisiensi Sistem</div><div class="v"><span data-k="ef">94.1</span><small>%</small></div><div class="up">↑ 2.3% from last month</div></div>'+
  '<div class="card"><div class="row"><span class="ico">↘</span><span class="up">This month</span></div><div class="k">Penghematan Biaya Bulan Ini</div><div class="v">Rp <span data-k="sv">12.4</span><small>M</small></div><div class="k">vs traditional fuel costs</div></div>'+
  '<div class="card"><div class="row"><span class="ico">❦</span><span class="up">Total</span></div><div class="k">CO₂ Berkurang</div><div class="v"><span data-k="co">145.8</span> <small>tons</small></div><div class="k">≈ 2,340 trees planted</div></div></div>'+
- '<div class="card mb"><h3>Thermal Battery System</h3><div class="k" style="margin:-8px 0 12px">Interactive 3D · aliran energi dan panas bata refraktori secara real-time</div><div class="v3d" id="v3d"><div class="cv"></div><div class="hud"><div><div class="hr1"><span>Panas Saat Ini</span><b data-k="th"></b></div><div class="tr"><i class="hot" data-k="hb"></i></div></div><div><div class="hr1"><span>Estimasi Panas Tersisa</span><b data-k="rm"></b></div><div class="tr"><i class="rem" data-k="rb"></i></div></div></div><div class="zb"><button data-z="1" aria-label="Zoom in">＋</button><button data-z="-1" aria-label="Zoom out">－</button><button data-z="0" aria-label="Reset">⟲</button></div><div class="hint">Seret untuk memutar · scroll / cubit untuk zoom</div></div><div class="leg" style="justify-content:flex-end"><span><i style="background:#8f3a1c"></i>Hot fluid</span><span><i style="background:#b0561f"></i>Cold fluid</span><span><i style="background:#f0b83a"></i>Power input</span></div></div>'+
+ '<div class="card mb"><div class="row" style="align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:0"><div><h3>Thermal Battery System</h3><div class="k" style="margin:-8px 0 12px">Interactive 3D · aliran energi dan panas bata refraktori secara real-time</div></div><div class="tabs mm" id="mdsw" role="group" aria-label="Mode sistem"><button data-md="charge">Charge</button><button data-md="store">Storing</button><button data-md="discharge">Discharge</button></div></div><div class="v3d" id="v3d"><div class="cv"></div><div class="hud"><div><div class="hr1"><span>Panas Saat Ini</span><b data-k="th"></b></div><div class="tr"><i class="hot" data-k="hb"></i></div></div><div><div class="hr1"><span>Estimasi Panas Tersisa</span><b data-k="rm"></b></div><div class="tr"><i class="rem" data-k="rb"></i></div></div></div><div class="zb"><button data-z="1" aria-label="Zoom in">＋</button><button data-z="-1" aria-label="Zoom out">－</button><button data-z="0" aria-label="Reset">⟲</button></div><div class="hint">Seret untuk memutar · scroll / cubit untuk zoom</div><div class="mcap" id="mcap"></div></div><div class="leg" style="justify-content:flex-end"><span><i style="background:#8f3a1c"></i>Hot fluid</span><span><i style="background:#b0561f"></i>Cold fluid</span><span><i style="background:#f0b83a"></i>Power input</span></div></div>'+
  '<div class="grid" style="grid-template-columns:minmax(0,2fr) minmax(0,1fr)"><div class="card"><h3>Status Sistem</h3><div class="grid c3">'+
  stat('a','Temperature','<span data-k="t2">'+N(L.t-83)+'°C'+'</span>','∿ Normal range')+stat('b','Pressure','<span data-k="p2">'+(L.p+.1).toFixed(1)+' bar'+'</span>','∿ Stable')+stat('c','Flow Rate','<span data-k="f2">'+N(L.f+96)+' L/h'+'</span>','∿ Optimal')+
  stat('d','Power','<span data-k="w2">'+N(L.w-227)+' kW'+'</span>','↑ Discharging')+stat('e','Efficiency','92.5%','↑ Excellent')+stat('f','Status','<span style="color:var(--org)">Pemeliharaan</span>','◷ Real-time')+'</div></div>'+
@@ -338,7 +433,7 @@ esg:function(){var o='',i;for(i=0;i<10;i++)o+='<option value="'+i+'">'+MN[i]+' 2
  return '<div class="ttl noprint"><div><div class="eyebrow">LAPORAN KEBERLANJUTAN · 2026</div><h1>Laporan ESG &amp; Karbon</h1><p>Dokumen per klaster. Atur periode, scroll untuk membaca, lalu unduh sebagai PDF.</p></div></div><div class="ctl noprint"><label>Dari<select id="ea">'+sa+'</select></label><label>Sampai<select id="eb">'+sb+'</select></label><button class="btn" id="pdf">⭳ Unduh PDF</button></div><div class="doc">'+esgDoc()+'</div>'},
 
 
-tagihan:function(){var p=PL[sel],k=K(),pd=p.paid,amt=pd?p.pa:Math.round(L.u*892),
+tagihan:function(){var p=CP(),k=K(),pd=p.paid,amt=pd?p.pa:Math.round(L.u*892),
  inv=MON.slice(5).map(function(m,i){return ['2026'+('0'+(6+i)).slice(-2),m.n+' 2026','25/'+(6+i)+'/2026',m.u*k,m.r,m.a*k]}),
  ytd=MON.reduce(function(s,m){return s+m.a},0)*k+(pd?p.pa:0),
  box=function(l,v,u,kk){return '<div class="g" style="background:rgba(255,255,255,.12);box-shadow:none"><div class="k">'+l+'</div><div class="v"'+(kk?' data-k="'+kk+'"':'')+'>'+v+'</div><div class="t">'+u+'</div></div>'},
@@ -362,14 +457,12 @@ ai:function(){var recs=[['Optimal Charging Time Detected','HIGH','r','Charge bet
  '<div class="card scroll"><h3>◷ Jadwal Pengisian Optimal</h3><table><thead><tr><th>Time Window</th><th>Priority</th><th>Rate</th><th class="n">Savings</th></tr></thead><tbody>'+
  [['22:00-02:00','High','Low','Rp 4.5M'],['02:00-06:00','High','Low','Rp 3.8M'],['06:00-10:00','Medium','Medium','Rp 1.2M']].map(function(x){return '<tr><td><b>'+x[0]+'</b></td><td><span class="tg">'+x[1]+'</span></td><td><span class="tg '+(x[2]==='Low'?'':'m')+'">'+x[2]+'</span></td><td class="n up"><b>'+x[3]+'</b></td></tr>'}).join('')+'</tbody></table></div>'},
 
-profil:function(){var p=PL[sel],kp=function(l,v,c){return '<div class="kpi" style="--a:'+c+'"><span>'+l+'</span><b>'+v+'</b></div>'},nm=PL.map(function(x){return x.n.replace('Pabrik ','').replace(' Raya','')});
- return '<div class="ttl"><div><h1>Executive</h1><p>Akun dan pemantauan multi-pabrik</p></div></div>'+
+profil:function(){var p=CP(),kp=function(l,v,c){return '<div class="kpi" style="--a:'+c+'"><span>'+l+'</span><b>'+v+'</b></div>'},nm=PL.map(function(x){return x.n.replace('Pabrik ','').replace(' Raya','')});
+ return '<div class="ttl"><div><h1>Executive</h1><p>Akun dan pemantauan multi-pabrik</p></div><div class="xbar"><button class="btn wa" id="wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.83c0 4.55-3.7 8.23-8.25 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>WhatsApp</button><button class="btn o pk" id="pk" aria-haspopup="dialog"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V10l6 4v-4l6 4V6h3v15z"/></svg><span>'+p.n+'</span> ▾</button></div></div>'+
  '<div class="card mb"><div class="row" style="justify-content:flex-start;gap:16px"><span class="av" style="width:64px;height:64px"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><div><h3 style="margin:0">PT Industri ABC</h3><span class="k">Executive · demo@industry.com · Bahasa Indonesia</span></div></div></div>'+
- '<div class="card mb"><div class="row" style="flex-wrap:wrap;gap:8px"><div><h3 style="margin:0">Pabrik Saya</h3><div class="k">Pilih pabrik untuk melihat performanya.</div></div><span class="pill">'+PL.length+' pabrik</span></div><div class="fg">'+
- PL.map(function(x,i){return '<button class="fc'+(i===sel?' on':'')+'" data-pl="'+i+'">'+fac(PC[i%5])+'<b>'+x.n+'</b><span class="k">'+x.k+' · '+N(x.cap)+' kWh</span></button>'}).join('')+'<button class="fc add" id="addp"><span>＋</span>Tambah Pabrik</button></div></div>'+
- '<div class="card mb"><div class="row" style="flex-wrap:wrap;gap:8px"><h3 style="margin:0">Performa '+p.n+'</h3><span class="pill"><span class="dot" style="background:var(--org)"></span>Dipilih</span></div><div class="grid c3" style="margin-top:12px">'+
+  '<div class="card mb"><div class="row" style="flex-wrap:wrap;gap:8px"><h3 style="margin:0">Performa '+p.n+'</h3><span class="pill"><span class="dot" style="background:var(--org)"></span>'+(ALL?'Gabungan':'Dipilih')+'</span></div><div class="grid c3" style="margin-top:12px">'+
  kp('Energi Tersimpan',N(p.e)+' <small>kWh ('+(p.e/p.cap*100).toFixed(0)+'%)</small>','#d9732b')+kp('Efisiensi',p.ef.toFixed(1)+' <small>%</small>','#5fae85')+kp('Suhu',N(p.t)+' <small>°C</small>','#c4283c')+kp('Daya',N(p.w)+' <small>kW</small>','#dcae2c')+kp('Penghematan Bulan Ini','Rp '+p.sv.toFixed(1)+' <small>M</small>','#3b7be8')+kp('CO₂ Berkurang',p.co.toFixed(1)+' <small>ton</small>','#6fb38c')+'</div></div>'+
- '<div class="grid c2"><div class="card"><h3>Daya 24 Jam · '+p.n+'</h3>'+lc({labels:H24,max:800,ticks:4,h:260,t:'Daya 24 jam',s:[{d:wave(12,p.w,70,sel+1),c:'#dcae2c'}]})+'</div><div class="card"><h3>Perbandingan Antar Pabrik</h3>'+bc({labels:nm,max:100,ticks:4,h:260,t:'Perbandingan pabrik',s:[{d:PL.map(function(x){return x.e/x.cap*100}),c:'#d9732b'},{d:PL.map(function(x){return x.ef}),c:'#5fae85'}]})+'<div class="leg" style="justify-content:center"><span><i style="background:#d9732b;border-radius:2px"></i>Isi baterai (%)</span><span><i style="background:#5fae85;border-radius:2px"></i>Efisiensi (%)</span></div></div></div>'}
+ '<div class="grid c2"><div class="card"><h3>Daya 24 Jam · '+p.n+'</h3>'+lc({labels:H24,max:(ALL?Math.ceil((p.w+70)/400)*400:800),ticks:4,h:260,t:'Daya 24 jam',s:[{d:wave(12,p.w,70,sel+1),c:'#dcae2c'}]})+'</div><div class="card"><h3>Perbandingan Antar Pabrik</h3>'+bc({labels:nm,max:100,ticks:4,h:260,t:'Perbandingan pabrik',s:[{d:PL.map(function(x){return x.e/x.cap*100}),c:'#d9732b'},{d:PL.map(function(x){return x.ef}),c:'#5fae85'}]})+'<div class="leg" style="justify-content:center"><span><i style="background:#d9732b;border-radius:2px"></i>Isi baterai (%)</span><span><i style="background:#5fae85;border-radius:2px"></i>Efisiensi (%)</span></div></div></div>'}
 };
 
 /* ===== data & util tambahan ===== */
@@ -383,8 +476,11 @@ PL=[{n:'Pabrik Cikarang',k:'Jawa Barat',un:3,e:3778,cap:5000,ef:94.1,t:742,p:9,f
 sel=0,ES={a:0,b:9},RPT={},BZ=1,
 BAD={'A-2-3':'o','B-5-2':'r','C-1-4':'o','C-6-1':'r','D-3-5':'o','D-6-2':'r'},
 RM=[['10.00 – 12.00','Surya puncak','600'],['12.00 – 14.00','Surya puncak','520'],['22.00 – 00.00','Tarif rendah','700'],['00.00 – 03.00','Tarif rendah','900'],['03.00 – 06.00','Tarif rendah','480']];
-function K(){return PL[sel].cap/5000}
-function applyPlant(i,h){sel=i;var p=PL[i];Object.assign(L,{e:p.e,e0:p.e,cap:p.cap,ef:p.ef,t:p.t,p:p.p,f:p.f,w:p.w,sv:p.sv,co:p.co,u:18684*K()});if(h)$('usub').textContent='Executive · '+p.n}
+var ALL=0,AG={};
+function CP(){if(!ALL)return PL[sel];var n=PL.length,s=function(f){return PL.reduce(function(a,x){return a+f(x)},0)},cap=s(function(x){return x.cap});
+ Object.assign(AG,{n:'Semua Pabrik',k:n+' pabrik (gabungan)',un:s(function(x){return x.un}),e:s(function(x){return x.e}),cap:cap,ef:s(function(x){return x.ef*x.cap})/cap,t:s(function(x){return x.t})/n,p:s(function(x){return x.p})/n,f:s(function(x){return x.f}),w:s(function(x){return x.w}),fa:s(function(x){return x.f})/n,wa:s(function(x){return x.w})/n,sv:s(function(x){return x.sv}),co:s(function(x){return x.co})});return AG}
+function K(){return CP().cap/5000}
+function applyPlant(i,h){ALL=i<0;if(!ALL)sel=i;var p=CP();Object.assign(L,{e:p.e,e0:p.e,cap:p.cap,ef:p.ef,t:p.t,p:p.p,f:p.fa||p.f,w:p.wa||p.w,sv:p.sv,co:p.co,u:18684*K()});if(h)$('usub').textContent='Executive · '+p.n}
 applyPlant(0);
 function fac(c){return '<svg viewBox="0 0 200 110" width="100%" aria-hidden="true"><rect width="200" height="110" fill="#eaf3fb"/><circle cx="172" cy="20" r="10" fill="#fbe08a"/><rect y="88" width="200" height="22" fill="#9fb39a"/><rect x="24" y="52" width="108" height="40" fill="'+c+'"/><path d="M24 52l18-14v14l18-14v14l18-14v14l18-14v14" fill="'+c+'"/><rect x="140" y="30" width="14" height="62" fill="#7d7468"/><rect x="160" y="46" width="12" height="46" fill="#8c8377"/><g fill="#fff" opacity=".85"><circle cx="147" cy="22" r="6"/><circle cx="156" cy="11" r="5"/></g><g fill="#fdf0c8"><rect x="36" y="66" width="12" height="10"/><rect x="58" y="66" width="12" height="10"/><rect x="80" y="66" width="12" height="10"/><rect x="102" y="66" width="12" height="10"/></g></svg>'}
 function qr(sd){var n=29,r=sd||7,c='',i,j,f=function(x,y){return (x<8&&y<8)||(x>n-9&&y<8)||(x<8&&y>n-9)};
@@ -408,31 +504,83 @@ function bk(id){var t=BAD[id],T=bTemp(id),msg=!t?'Bata dalam kondisi baik dan me
  mdl('<div class="row"><h3 style="margin:0">Bata '+id+'</h3><span class="tg '+(t?'r':'')+'">'+(t==='r'?'Rusak':t==='o'?'Kurang optimal':'Normal')+'</span></div><div class="grid c2" style="gap:10px;margin:10px 0"><div class="st s-f"><span class="k">Suhu permukaan</span><b style="font-size:22px">'+T+'°C</b></div><div class="st s-f"><span class="k">Posisi</span><b style="font-size:22px">T'+q[0]+' · B'+q[1]+' · K'+q[2]+'</b></div></div><p>'+msg+'</p><div class="ac"><button class="btn o" onclick="xmd()">Tutup</button>'+(t?'<button class="btn" id="lp"'+(RPT[id]?' disabled style="opacity:.6">✓ Sudah dilaporkan':'>Laporkan ke Admin')+'</button>':'')+'</div>');
  if(t&&!RPT[id])$('lp').onclick=function(){RPT[id]=1;var e=document.querySelector('[data-b="'+id+'"]');if(e)e.classList.add('rp');xmd();toast('Laporan bata '+id+' terkirim ke Admin (LP-'+(1000+Math.floor(Math.random()*9000))+')')}}
 /* QRIS */
-function payQR(){var p=PL[sel],amt=Math.round(L.u*892),u=L.u;
+function payQR(){var p=CP(),amt=Math.round(L.u*892),u=L.u;
  mdl('<h3>Bayar dengan QRIS</h3><p class="k">INV-202611 · '+p.n+'</p><div class="qb">'+qr(amt)+'</div><div class="qa">'+P(amt)+'</div><p class="k" style="text-align:center">Scan dengan m-banking atau e-wallet yang mendukung QRIS. Berlaku <b id="cd">15:00</b></p><div class="ac"><button class="btn o" onclick="xmd()">Batal</button><button class="btn" id="pd">Saya Sudah Bayar</button></div><p class="k" style="font-size:12px;text-align:center;margin-top:10px">QRIS simulasi untuk demo, tidak memproses uang asli.</p>');
  var s=900,iv=setInterval(function(){var c=$('cd');if(!c){clearInterval(iv);return}s--;c.textContent=('0'+Math.floor(s/60)).slice(-2)+':'+('0'+s%60).slice(-2)},1000);
  $('pd').onclick=function(){clearInterval(iv);mdl('<div class="sp"></div><p style="text-align:center">Memverifikasi pembayaran…</p>');
   setTimeout(function(){p.paid=1;p.pa=amt;p.pu=u;render();mdl('<div style="text-align:center"><div class="okc">✓</div><h3>Pembayaran Berhasil</h3><p>'+P(amt)+' untuk INV-202611 telah diterima.</p><button class="btn" onclick="xmd()" style="margin-top:12px">Selesai</button></div>')},1400)}}
 /* tambah pabrik */
-function addForm(){mdl('<h3>Tambah Pabrik</h3><p class="k">Masukkan kode verifikasi pabrik dari BATERMAL.</p><input id="kd" class="in" placeholder="Contoh: BTM-2026-XXXX" autocomplete="off"><div class="ac"><button class="btn o" onclick="xmd()">Batal</button><button class="btn" id="vf">Verifikasi</button></div>');$('kd').focus();
+var NEWP=[{n:'Pabrik Jogja',k:'DI Yogyakarta',un:1,e:1520,cap:2500,ef:93.2,t:690,p:8.1,f:1245,w:430,sv:5.6,co:61.2},{n:'Pabrik Surabaya',k:'Jawa Timur',un:3,e:3340,cap:4500,ef:93.8,t:722,p:8.8,f:1298,w:520,sv:11.1,co:128.5},{n:'Pabrik Karawang',k:'Jawa Barat',un:2,e:2290,cap:3500,ef:92.4,t:698,p:8.3,f:1252,w:455,sv:8.3,co:97.6},{n:'Pabrik Medan',k:'Sumatera Utara',un:2,e:2760,cap:4000,ef:92.9,t:710,p:8.6,f:1270,w:489,sv:9.4,co:108.1}];
+function nextNew(){return NEWP.filter(function(n){return !PL.some(function(x){return x.n===n.n})})[0]}
+function esc(s){return String(s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})}
+function addForm(){var np=nextNew();if(!np){toast('Semua pabrik yang tersedia sudah terdaftar');return}
+ mdl('<h3>Tambah Pabrik</h3><p class="k">Masukkan kode verifikasi pabrik dari BATERMAL.</p><input id="kd" class="in" placeholder="Contoh: BTM-2026-XXXX" autocomplete="off"><div class="ac"><button class="btn o" id="bk">Kembali</button><button class="btn" id="vf">Verifikasi</button></div>');$('kd').focus();
+ $('bk').onclick=pickModal;
  $('vf').onclick=function(){if(!$('kd').value.trim()){toast('Masukkan kode terlebih dahulu');return}
-  mdl('<div style="text-align:center"><div class="okc">✓</div><h3>Selamat!</h3><p>Verifikasi <b>Pabrik Jogja</b> berhasil.</p><button class="btn" id="dn" style="margin-top:12px">Selesai</button></div>');
-  $('dn').onclick=function(){if(!PL.some(function(x){return x.n==='Pabrik Jogja'}))PL.push({n:'Pabrik Jogja',k:'DI Yogyakarta',un:1,e:1520,cap:2500,ef:93.2,t:690,p:8.1,f:1245,w:430,sv:5.6,co:61.2});xmd();render()}}}
+  mdl('<div style="text-align:center"><div class="okc">✓</div><h3>Selamat!</h3><p>Verifikasi <b>'+np.n+'</b> berhasil.</p><button class="btn" id="dn" style="margin-top:12px">Selesai</button></div>');
+  $('dn').onclick=function(){if(!PL.some(function(x){return x.n===np.n}))PL.push(Object.assign({},np));if(ALL)applyPlant(-1,1);xmd();render();pickModal()}}}
+/* pemilih pabrik (pop up) */
+function pickPlant(i){applyPlant(i,1);render();toast(i<0?'Menampilkan gabungan semua pabrik':'Menampilkan performa '+PL[i].n)}
+function pickModal(){var cur=ALL?-1:sel,cap=PL.reduce(function(a,x){return a+x.cap},0),
+ row=function(i,ic,t,s){return '<button class="po'+(cur===i?' on':'')+'" data-po="'+i+'">'+ic+'<span><b>'+t+'</b><span class="k">'+s+'</span></span><i class="ck">✓</i></button>'};
+ mdl('<div class="row" style="margin-bottom:4px"><h3 style="margin:0">Pilih Pabrik</h3><button class="xb" onclick="xmd()" aria-label="Tutup">✕</button></div><p class="k" style="margin-top:0">Pilih satu pabrik, atau gunakan semua pabrik untuk melihat hasil gabungan.</p><div class="pl">'+
+  row(-1,'<span class="pi all">∑</span>','Gunakan Semua Pabrik','Hasil gabungan · '+PL.length+' pabrik · '+N(cap)+' kWh')+
+  PL.map(function(x,i){return row(i,'<span class="pi">'+fac(PC[i%5])+'</span>',x.n,x.k+' · '+N(x.cap)+' kWh')}).join('')+
+  '</div><div class="ac" style="justify-content:space-between"><button class="btn o" id="pad">＋ Tambah Pabrik</button><button class="btn o" onclick="xmd()">Tutup</button></div>');
+ $('md').querySelectorAll('[data-po]').forEach(function(b){b.onclick=function(){xmd();pickPlant(+b.dataset.po)}});
+ $('pad').onclick=addForm}
+/* WhatsApp: 10 nomor + simulasi */
+var WA=[],WAI=0;try{WA=JSON.parse(localStorage.getItem('btm_wa')||'[]')}catch(e){}
+if(!Array.isArray(WA))WA=[];WA=WA.map(String).slice(0,10);while(WA.length<10)WA.push('');
+var VSM='<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#25d366"/><path d="M7.5 12.3l3 3 6-6.3" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+var WAM=[
+ function(p){return [['⚠️ *PERINGATAN BATERMAL*','Pabrik: *'+p.n+'*','','Terdeteksi *bata rusak* di posisi *C-6-1*: suhu permukaan 412°C, jauh di bawah normal.','Segera lakukan inspeksi.'],['Balas *1* untuk konfirmasi diterima atau *2* untuk menghubungi teknisi.']]},
+ function(p){return [['⚠️ *PERINGATAN SUHU*','Pabrik: *'+p.n+'*','','Lonjakan suhu singkat pada modul *B-3* (maks. 768°C). Saat ini sudah kembali normal.'],['Pantau terus di dashboard BATERMAL. Balas *1* jika sudah ditangani.']]},
+ function(p){return [['🔋 *ENERGI TERSIMPAN RENDAH*','Pabrik: *'+p.n+'*','','Energi tersimpan tinggal *18%* ('+N(Math.round(p.cap*.18))+' dari '+N(p.cap)+' kWh).','Disarankan charge pada tarif rendah 22.00–06.00.'],['Balas *1* untuk menjadwalkan pengisian otomatis.']]},
+ function(p){return [['🛠️ *PENGINGAT PEMELIHARAAN*','Pabrik: *'+p.n+'*','','Pemeliharaan preventif dijadwalkan *12 November 2026 pukul 02.00*. Mohon siapkan akses ke unit.'],['Balas *1* untuk konfirmasi jadwal.']]}];
+function fmtWA(l){return l.map(esc).join('<br>').replace(/\*([^*]+)\*/g,'<b>$1</b>')}
+var PHT=[];
+function phoneClose(){PHT.forEach(clearTimeout);PHT=[];var e=$('ph');e.classList.remove('on');e.innerHTML=''}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&$('ph').classList.contains('on')){phoneClose();e.stopImmediatePropagation()}},true);
+function phoneSim(i){var num=WA[i].trim(),m=WAM[WAI++%WAM.length](CP()),
+ hm=function(){var d=new Date();return ('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2)};
+ phoneClose();
+ $('ph').innerHTML='<div class="phw"><div class="phc">Simulasi notifikasi WhatsApp untuk <b>'+esc(num)+'</b></div><div class="phone vib"><div class="ntch"></div><div class="scr"><div class="sb"><span>'+hm()+'</span><span>5G ▂▄▆ ▮</span></div><div class="wh"><span class="bk">‹</span><span class="wav"><img src="'+LOGO+'" alt=""></span><div><b>BATERMAL Alert '+VSM+'</b><small>akun bisnis terverifikasi</small></div></div><div class="wcb" id="wcb"><div class="dc">HARI INI</div></div><div class="wf"><span>Ketik pesan</span><i>➤</i></div></div></div><button class="btn w" id="phx">Tutup</button></div>';
+ $('ph').classList.add('on');
+ var box=$('wcb'),add=function(h,cl){var d=document.createElement('div');d.className='bb'+(cl?' '+cl:'');d.innerHTML=h;box.appendChild(d);return d},
+  typing=function(){return add('<span class="ty"><i></i><i></i><i></i></span>')},ty=typing();
+ PHT=[setTimeout(function(){ty.remove();add(fmtWA(m[0])+'<span class="tm">'+hm()+'</span>','warn')},1100),
+  setTimeout(function(){ty=typing()},1800),
+  setTimeout(function(){ty.remove();add(fmtWA(m[1])+'<span class="tm">'+hm()+'</span>')},2800)];
+ $('phx').onclick=phoneClose;$('ph').onclick=function(e){if(e.target===this)phoneClose()}}
+function waModal(){
+ mdl('<div class="row" style="margin-bottom:4px"><h3 style="margin:0">Notifikasi WhatsApp</h3><button class="xb" onclick="xmd()" aria-label="Tutup">✕</button></div><p class="k" style="margin-top:0">Isi hingga 10 nomor. Nomor yang terisi akan menerima notifikasi peringatan sistem lewat WhatsApp. Klik <b>Simulasi</b> untuk melihat contoh pesannya di HP.</p><div class="wl">'+
+  WA.map(function(v,i){return '<div class="wr"><span class="wn">'+(i+1)+'</span><input class="in" type="tel" inputmode="tel" data-wi="'+i+'" placeholder="Contoh: 0812-3456-7890" value="'+esc(v)+'" autocomplete="off" aria-label="Nomor WhatsApp '+(i+1)+'"><button class="btn o sm" data-ws="'+i+'">Simulasi</button></div>'}).join('')+
+  '</div><div class="ac"><span class="wcnt" id="wcnt"></span><button class="btn o" onclick="xmd()">Tutup</button><button class="btn" id="wsv">Simpan</button></div>');
+ $('md').firstChild.classList.add('wide');
+ var ins=$('md').querySelectorAll('[data-wi]'),cnt=function(){return WA.filter(function(x){return x.trim()}).length},
+  upd=function(){$('wcnt').textContent=cnt()+' dari 10 nomor terisi'};upd();
+ ins.forEach(function(el){el.oninput=function(){var v=el.value.replace(/[^0-9+\-\s()]/g,'');if(v!==el.value)el.value=v;WA[+el.dataset.wi]=v;upd()}});
+ $('md').querySelectorAll('[data-ws]').forEach(function(b){b.onclick=function(){var i=+b.dataset.ws;if(WA[i].replace(/\D/g,'').length<9){toast('Isi nomor WhatsApp dulu (minimal 9 digit)');ins[i].focus();return}phoneSim(i)}});
+ $('wsv').onclick=function(){try{localStorage.setItem('btm_wa',JSON.stringify(WA))}catch(e){}var n=cnt();toast(n?n+' nomor aktif: notifikasi akan masuk ke WhatsApp (simulasi)':'Belum ada nomor yang terisi')}}
 /* ESG */
-function esgDoc(){var a=ES.a,b=ES.b,k=K(),p=PL[sel],M=MON.slice(a,b+1),n=M.length,i,
+var VSH='<svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5z" fill="#2f8f5b"/><path d="M8 12.2l3 3 5-6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+function vh(s){var h=7,i;for(i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%99991;return ('00000'+h).slice(-5)}
+function vb(n,per){return '<div class="vbg" role="img" aria-label="Laporan terverifikasi">'+VSH+'<div><b>VERIFIED</b><span>Data terverifikasi BATERMAL · 5 Nov 2026</span><span>ID BTM-VRF-'+vh(n+per)+'</span></div></div>'}
+function esgDoc(){var a=ES.a,b=ES.b,k=K(),p=CP(),M=MON.slice(a,b+1),n=M.length,i,
  S=function(f){return M.reduce(function(s,m){return s+f(m)},0)},
  us=S(function(m){return m.u})*k,pay=S(function(m){return m.a})*k,sv=S(function(m){return m.u*(1650-m.r)})*k,ef=S(function(m){return m.ef})/n,co=us*.00116,
  lb=M.map(function(m){return m.n}),per=MN[a]+(a===b?'':' – '+MN[b])+' 2026',
- hd=function(t){return '<div class="dh"><div><b class="p">BATERMAL</b><span>Laporan ESG &amp; Karbon · '+p.n+' · '+per+'</span></div><span>'+t+'</span></div>'},
+ hd=function(t){return '<div class="dh"><div><b class="p">BATERMAL</b><span>Laporan ESG &amp; Karbon · '+p.n+' · '+per+'</span></div><span>'+t+' <span class="vbs">✓ Verified</span></span></div>'},
  ft=function(i){return '<div class="df"><span>BATERMAL Smart Thermal Battery · Dibuat 5 November 2026</span><span>Halaman '+i+' / 4</span></div>'},
  dk=function(l,v,u){return '<div class="dk"><span>'+l+'</span><b>'+v+(u?' <small>'+u+'</small>':'')+'</b></div>'},
  tb=function(h,rows){return '<table class="dt"><thead><tr>'+h.map(function(x,i){return '<th'+(i?' class="n"':'')+'>'+x+'</th>'}).join('')+'</tr></thead><tbody>'+rows.map(function(r){return '<tr>'+r.map(function(x,i){return '<td'+(i?' class="n"':'')+'>'+x+'</td>'}).join('')+'</tr>'}).join('')+'</tbody></table>'},
  H=function(t){return '<h2 class="ch">'+t+'</h2>'},
  mx=function(f,st){return Math.ceil(Math.max.apply(null,M.map(f))*k/st)*st},
  un=p.un,ua=un>2?un-1:un,ur=[];
- for(i=0;i<un;i++)ur.push(['TB-00'+(i+1),p.k+' · Blok '+'ABCD'[i],N(p.cap/un)+' kWh',i===un-1&&un>2?'Standby':'Aktif',(99.2-i*.3).toFixed(1)+'%']);
+ for(i=0;i<un;i++)ur.push(['TB-00'+(i+1),p.k+' · Blok '+'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i],N(p.cap/un)+' kWh',i===un-1&&un>2?'Standby':'Aktif',(99.2-i*.3).toFixed(1)+'%']);
  var base=co/.852,cmp=[['Emisi CO₂','ton',co,.852],['Bahan bakar fosil','ton',us*.000543,.764],['Penggunaan air','m³',us*.0071,.528]],
- P1='<section class="pg">'+hd('Ringkasan &amp; Instalasi')+'<h1 class="dt1">Laporan ESG &amp; Karbon</h1><p class="lead">Laporan ini merangkum kinerja instalasi BATERMAL Thermal Battery di '+p.n+' selama '+per+'. Pada periode tersebut sistem memakai '+N(us)+' kWh energi termal, menekan emisi sebesar '+N(co,1)+' ton CO₂, dan menghemat biaya energi sekitar Rp '+N(sv/1e6)+' juta dibanding bahan bakar konvensional.</p><div class="dk4">'+dk('Unit terpasang',un,'unit')+dk('Kapasitas total',N(p.cap),'kWh')+dk('Energi digunakan',N(us),'kWh')+dk('CO₂ berkurang',N(co,1),'ton')+'</div>'+
+ P1='<section class="pg">'+hd('Ringkasan &amp; Instalasi')+'<div class="dtw"><h1 class="dt1">Laporan ESG &amp; Karbon</h1>'+vb(p.n,per)+'</div><p class="lead">Laporan ini merangkum kinerja instalasi BATERMAL Thermal Battery di '+p.n+' selama '+per+'. Pada periode tersebut sistem memakai '+N(us)+' kWh energi termal, menekan emisi sebesar '+N(co,1)+' ton CO₂, dan menghemat biaya energi sekitar Rp '+N(sv/1e6)+' juta dibanding bahan bakar konvensional.</p><div class="dk4">'+dk('Unit terpasang',un,'unit')+dk('Kapasitas total',N(p.cap),'kWh')+dk('Energi digunakan',N(us),'kWh')+dk('CO₂ berkurang',N(co,1),'ton')+'</div>'+
  H('Klaster Instalasi')+'<p class="lead">Terdapat '+un+' unit terpasang, '+ua+' unit aktif beroperasi dan sisanya berstatus standby. Seluruh unit memakai susunan bata refraktori BATERMAL dan terhubung ke pemantauan real-time.</p>'+tb(['ID Unit','Lokasi','Kapasitas','Status','Uptime'],ur)+
  H('Ringkasan Kinerja')+'<p class="lead">Efisiensi rata-rata sistem pada periode ini '+ef.toFixed(1)+'%, dengan suhu operasi stabil pada rentang 600–750°C. Seluruh data bersumber dari sensor unit dan diperbarui secara berkala.</p>'+ft(1)+'</section>',
  P2='<section class="pg">'+hd('Klaster Pemakaian')+H('Klaster Pemakaian Energi')+'<p class="lead">Total energi termal yang telah digunakan pada periode '+per+' adalah '+N(us)+' kWh, rata-rata '+N(us/n)+' kWh per bulan. Pemakaian relatif stabil dan efisiensi meningkat bertahap dari bulan ke bulan.</p><div class="dk3">'+dk('Total pemakaian',N(us),'kWh')+dk('Rata-rata bulanan',N(us/n),'kWh')+dk('Efisiensi rata-rata',ef.toFixed(1),'%')+'</div>'+
@@ -448,7 +596,6 @@ function esgDoc(){var a=ES.a,b=ES.b,k=K(),p=PL[sel],M=MON.slice(a,b+1),n=M.lengt
  H('Catatan Metodologi')+'<p class="k">Pengurangan emisi dihitung terhadap baseline sistem bahan bakar konvensional pada beban termal yang sama. Nilai setara pohon memakai faktor serapan karbon rata-rata. Data pada laporan ini bersifat demo dan tidak menggantikan verifikasi pihak ketiga.</p>'+ft(4)+'</section>';
  return P1+P2+P3+P4}
 /* executive */
-function pickPlant(i){applyPlant(i,1);render();toast('Menampilkan performa '+PL[i].n)}
 function bind2(){var v=$('view');
  v.querySelectorAll('[data-bell]').forEach(function(a){a.onclick=function(e){e.preventDefault();bell(e)}});
  if(cur==='monitor'){var w=$('bkw'),zs=function(z){BZ=Math.max(.6,Math.min(2.4,+z.toFixed(2)));w.style.setProperty('--z',BZ);$('zl').textContent=Math.round(BZ*100)+'%'};
@@ -459,7 +606,8 @@ function bind2(){var v=$('view');
  if(cur==='esg'){var ch=function(){ES.a=+$('ea').value;ES.b=+$('eb').value;if(ES.b<ES.a){var t=ES.a;ES.a=ES.b;ES.b=t}render()};$('ea').onchange=ch;$('eb').onchange=ch;
   $('pdf').onclick=function(){toast('Pilih "Simpan sebagai PDF" pada jendela cetak');setTimeout(function(){window.print()},700)}}
  if(cur==='tagihan'){if($('pay'))$('pay').onclick=payQR;v.querySelectorAll('[data-pay]').forEach(function(b){b.onclick=payQR})}
- if(cur==='profil'){v.querySelectorAll('[data-pl]').forEach(function(b){b.onclick=function(){pickPlant(+b.dataset.pl)}});$('addp').onclick=addForm}}
+ if(cur==='profil'){$('pk').onclick=pickModal;$('wa').onclick=waModal}
+ if(cur==='dasbor'){document.querySelectorAll('#mdsw button').forEach(function(b){b.onclick=function(){setMode(b.dataset.md)}});setMode(MODE)}}
 
 var cur='',tm;
 function roi(){var c=+$('r1').value,s=+$('r2').value,r=+$('r3').value,inv=c*2.5e9,mo=s*30*r,m=Math.ceil(inv/mo);
